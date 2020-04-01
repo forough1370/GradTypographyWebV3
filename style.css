@@ -1,0 +1,147 @@
+body{
+	background-color:lightgreen;
+}
+
+.middle-column{
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+  background: lightgreen;
+}
+/*@font-face {
+    font-family: 'Solide Mirage_Etroit';
+    src:url('assets/Etroit/Solide_Mirage-Etroit_web.woff');
+    font-weight: normal;
+    font-style: normal;
+}*/
+
+h1{
+	font-family: neue-kabel,sans-serif;
+	font-weight: 800;
+	font-style: normal;	color:#4d4dff;
+/*	text-transform: uppercase;
+*/	text-align: left;
+	font-size: 4em;
+	line-height: 1.5em;
+	margin-bottom: 15px;
+}
+
+h3{
+	font-family: coquette,sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 2em;
+	line-height: 1.3em;
+	margin-top: 15px;
+}
+
+.sidebar {
+	font-family: 'compagnon-roman';
+	text-align: left;
+	color:#4d4dff;
+	font-size: 0.8em;
+	line-height: 0.8em;
+	width: 500px; 
+    position: fixed;
+    float: left; 
+    margin-left: 5px; 
+    transform: rotate(-90deg);
+}
+
+.sidebar h3{
+	font-family: 'fengardo-neue';
+	font-size:1.3em;
+	text-align: left;
+	margin-bottom: 5px;
+	margin-top: 8px; 
+
+}
+
+.intro{
+	font-family: 'Zilla Slab', serif;
+	color: #4d4dff;
+	font-weight: 500;
+	font-size: 1.8em;
+	line-height: 1.3em;
+	text-align: justify;
+	padding:30px 0px 80px 0px;
+
+}
+
+.pull-quote{
+	font-family: coquette,sans-serif;
+	font-weight: 700;
+	font-style: normal;	color:#4d4dff;
+	font-size: 1.8em;
+	line-height: 1.3em;
+	margin-top: 10px;
+	margin-bottom: 50px;
+	float: right;
+	width: 36%;
+
+}
+
+.rickpoynor{
+	font-family: 'Zilla Slab', serif;
+	font-weight: 700;
+	font-size: 1.1em;
+	color: #4d4d4d;
+	text-align: justify;
+	line-height: 1.4em;
+	margin-bottom: 15px;
+	width: 60%;
+	float:left;
+	position: relative;
+}
+
+#rp{
+	font-family: coquette,sans-serif;
+	font-weight: 700;
+	text-transform: capitalize;
+	color:#4d4dff;
+}
+
+.davidbanash{
+	font-family: 'Zilla Slab', serif;
+	font-weight: 400;
+	color: #4d4d4d;
+	float:left;
+	text-align: justify;
+	width: 60%;
+	position: relative;
+	margin-bottom:50px;
+	line-height: 1.4em;
+	font-size: 1.1em;
+}
+
+a{
+	color:magenta;
+	text-decoration: dashed;
+  }
+
+.images{
+	float: left;
+}
+
+.hiddenimg {
+  display: none;
+}
+
+.hiddentxt:hover ~ .hiddenimg {
+  display: block;
+
+}
+
+.hiddentxt{
+	font-family: coquette,sans-serif;
+	font-weight: 700;
+	font-size: 1.2em;
+	font-style: normal;	color:#4d4dff;
+   	float: right;
+ 	width: 36%;
+ 	padding-bottom: 20px;
+
+}
+
+
+
