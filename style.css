@@ -7,13 +7,9 @@ body{
   width: 60%;
   padding: 10px;
   background: lightgreen;
+  display: flex;
+  flex-wrap: wrap;
 }
-/*@font-face {
-    font-family: 'Solide Mirage_Etroit';
-    src:url('assets/Etroit/Solide_Mirage-Etroit_web.woff');
-    font-weight: normal;
-    font-style: normal;
-}*/
 
 h1{
 	font-family: neue-kabel,sans-serif;
@@ -39,13 +35,17 @@ h3{
 	font-family: 'compagnon-roman';
 	text-align: left;
 	color:#4d4dff;
+	background-color:#66CDAA;
+	opacity: 0.8;
 	font-size: 0.8em;
 	line-height: 0.8em;
 	width: 500px; 
+	margin-left: 20px;
     position: fixed;
     float: left; 
     margin-left: 5px; 
     transform: rotate(-90deg);
+    padding:10px;
 }
 
 .sidebar h3{
@@ -71,14 +71,14 @@ h3{
 .pull-quote{
 	font-family: coquette,sans-serif;
 	font-weight: 700;
-	font-style: normal;	color:#4d4dff;
+	font-style: normal;	
+	color:#4d4dff;
 	font-size: 1.8em;
 	line-height: 1.3em;
-	margin-top: 10px;
 	margin-bottom: 50px;
 	float: right;
-	width: 36%;
-
+	min-width: 36%;
+	width: 100%;
 }
 
 .rickpoynor{
@@ -88,10 +88,10 @@ h3{
 	color: #4d4d4d;
 	text-align: justify;
 	line-height: 1.4em;
-	margin-bottom: 15px;
 	width: 60%;
 	float:left;
 	position: relative;
+	padding-bottom: 10px;
 }
 
 #rp{
@@ -109,7 +109,7 @@ h3{
 	text-align: justify;
 	width: 60%;
 	position: relative;
-	margin-bottom:50px;
+	padding-bottom: 50px;
 	line-height: 1.4em;
 	font-size: 1.1em;
 }
@@ -119,29 +119,114 @@ a{
 	text-decoration: dashed;
   }
 
-.images{
-	float: left;
-}
 
-.hiddenimg {
+.img {
   display: none;
+  position: absolute;
+
 }
 
-.hiddentxt:hover ~ .hiddenimg {
+.img-column{
+  flex:0 0 100px;
+}
+
+.hover-me:hover ~ .img {
   display: block;
+  color:black;
 
 }
 
-.hiddentxt{
+.hover-me:hover{
+	background-color:#66CDAA;
+}
+
+.hover-me{
+	border:dashed;
+	border-color:#66CDAA;
 	font-family: coquette,sans-serif;
 	font-weight: 700;
 	font-size: 1.2em;
-	font-style: normal;	color:#4d4dff;
+	font-style: normal;
+	color: magenta;
    	float: right;
- 	width: 36%;
- 	padding-bottom: 20px;
+ 	width: 270px;
+ 	padding: 20px 3px;
+ 	margin-left:25px;
+}
+
+@media only screen and (max-width:1050px) {
+	.middle-column{
+		-webkit-column-count: 1;
+		-moz-column-count: 1;
+		column-count: 1;
+	}
+
+		.rickpoynor{
+		width: 600px;
+		padding-bottom:5px;
+
+	}
+
+
+	.davidbanash{
+		width: 600px;
+		padding-bottom:10px;
+	}
+
+	.img-column{
+		float:left;
+		display:inline-flex;
+	}
+	.intro{
+		font-size: 1.5em;
+	}
+
+	.middle-column{
+		margin: 20px 50px;
+		padding-bottom: 300px;
+
+	}
+
+	.sidebar{
+		position: fixed;
+		transform: rotate(0deg);
+   		left: 60px;
+   		bottom: 40px;
+   		width: 350px;
+   		text-align: left;
+
+	}
+}
+
+@media only screen and (max-width:800px){
+	.intro{
+		font-size: 1.3em;
+	}
+
+	.middle-column{
+		margin: 20px 20px;
+		width: 200px;
+	}
+
+			.rickpoynor{
+		font-size: 0.9em;
+	}
+
+
+	.davidbanash{
+		font-size: 0.9em;
+	}
+
+	h1{
+		font-size: 2.5em;
+	}
+
+	h3{
+		font-size: 1.3em;
+	}
 
 }
+
 
 
 
